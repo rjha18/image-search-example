@@ -3,3 +3,7 @@ node_modules
 dist
 .turbo
 .DS_Store
+data/*
+adv_images/*
+__pycache__
+.vscode
