@@ -28,6 +28,8 @@ for adv in os.listdir(ADV_DIR):
     print(f'Evaluating {ADV_DIR + adv}...')
     try:
         for i, image in enumerate(os.listdir(DATA_DIR)):
+            if image == new_path:
+                continue
             print(f'\t{DATA_DIR + image}...')
             res[f'{DATA_DIR + image}'] = {}
             top_dict = search_image(DATA_DIR + image)
